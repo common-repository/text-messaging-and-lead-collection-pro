@@ -1,0 +1,131 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ form.tmlcp-livecomm-form p.response-message {
+    text-align: center;
+    display: none;
+ }
+ form.tmlcp-livecomm-form p.response-success {
+    color: #3c763d;
+ }
+ form.tmlcp-livecomm-form p.response-error {
+    color: #ff6258;
+ }
+
+.tmlcp-floating-button a img {
+    width: 20px;
+}
+.tmlcp-floating-button .tmlcp-close-icon img{
+    width: 12px;
+}
+ 
+.tmlcp-wrapper {
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+}
+.tmlcp-wrapper .tmlcp-floating-button a {
+    line-height: 0;
+}
+.tmlcp-wrapper .tmlcp-floating-button{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+}
+.tmlcp-wrapper .tmlcp-floating-button .tmlcp-message-icon,
+.tmlcp-wrapper .tmlcp-floating-button .tmlcp-close-icon{
+    bottom: 15px;
+    right: 15px;
+    background-color: #fff;
+    border: 2px solid #28303d;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.tmlcp-wrapper .tmlcp-livecomm-form {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 7px 16px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 7px 16px 0 rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    width: 300px;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    transition: all 300ms ease 0s;
+    background-color: rgb(245, 245, 247);
+    box-shadow: rgb(0 0 0 / 20%) 0px 10px 20px;
+    border-radius: 6px;
+}
+.tmlcp-wrapper .tmlcp-livecomm-form::-webkit-scrollbar {
+  width: 1px;
+}
+.tmlcp-wrapper .tmlcp-livecomm-form::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.tmlcp-wrapper .tmlcp-livecomm-form::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.tmlcp-wrapper .tmlcp-livecomm-form .form-group label {
+    font-size: 14px;
+}
+.tmlcp-wrapper .tmlcp-livecomm-form .form-group input, .tmlcp-wrapper .tmlcp-livecomm-form .form-group textarea {
+    font-size: 14px;
+    width: 100%;
+    color: #2f343d;
+    padding: 10px;
+    border: 2px solid #e4e7ea;
+    border-radius: 2px;
+    outline: none;
+    background-color: #fff;
+    margin: 0;
+}
+
+
+.tmlcp-livecomm-form{
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    transition: 0.5s;
+}
+.tmlcp-livecomm-form.active {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.tmlcp-wrapper .tmlcp-floating-button .tmlcp-message-icon, .tmlcp-wrapper .tmlcp-floating-button .tmlcp-close-icon{
+     display: none;
+}
+.tmlcp-wrapper .tmlcp-floating-button .tmlcp-message-icon.active, .tmlcp-wrapper .tmlcp-floating-button .tmlcp-close-icon.active{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
